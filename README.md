@@ -47,7 +47,7 @@ Executed quality checks:
 - Confirmed foreign key relationships match
 - Validated revenue calculations (quantity * unit_price)
 
-##📅 Day 4 — Date Dimension + Enhanced Fact Table
+## Day 4 — Date Dimension + Enhanced Fact Table
 ✔️ Tasks Completed
 
 - Created dim_date covering all dates for analysis
