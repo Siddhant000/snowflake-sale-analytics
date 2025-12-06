@@ -46,3 +46,35 @@ Executed quality checks:
 - Verified row counts between RAW → DIM → FACT
 - Confirmed foreign key relationships match
 - Validated revenue calculations (quantity * unit_price)
+
+##📅 Day 4 — Date Dimension + Enhanced Fact Table
+✔️ Tasks Completed
+
+-Created dim_date covering all dates for analysis
+-Added date_id foreign key to fact_sales
+-Enhanced fact table by preparing to add new measures (discount, profit, gross amount, net amount)
+-Validated joins between fact table and date dimension
+-Ensured all fact records map to valid dates
+
+🗂️ Date Dimension Includes
+-year, quarter, month, month_name
+-week_of_year
+-day, day_name
+-weekend flag
+
+🎯 Purpose of Date Dimension
+
+-Simplifies time-series analysis
+-Helps create dashboards based on daily/weekly/monthly metrics
+-Avoids repeated date calculations in queries
+-Standardizes time-based reporting
+
+
+Your star schema now has:
+
+-dim_customers
+-dim_products
+-dim_date
+-fact_sales
+
+Ready for deeper analytics & BI dashboards.
