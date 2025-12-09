@@ -9,7 +9,7 @@
 - Created Snowflake database, schema, and stage
 
 ## Day 2 — Creating Dimensions & Fact Table Design
-✔️ Tasks Completed
+Tasks Completed
 
 Designed the star schema for the sales analytics project.
 
@@ -21,7 +21,7 @@ Created dimension tables:
   - Foreign keys → customer_id, product_id, order_id, order_date
   - Measures → quantity, unit_price, total_price
 
-🧠 Key Concept: Why Fact Table Avoids Descriptive Columns
+Key Concept: Why Fact Table Avoids Descriptive Columns
 Fact tables store only numeric measures and foreign keys to ensure:
 - High performance for aggregations
 - Better compression
@@ -30,7 +30,7 @@ Fact tables store only numeric measures and foreign keys to ensure:
 - Customer/product names stay in dimension tables, not in the fact table.
 
 ## Day 3 — Building the Fact Table & Validations
-✔️ Tasks Completed
+Tasks Completed
 
 Loaded cleaned data into fact_sales.
 
@@ -48,7 +48,7 @@ Executed quality checks:
 - Validated revenue calculations (quantity * unit_price)
 
 ## Day 4 — Date Dimension + Enhanced Fact Table
-✔️ Tasks Completed
+Tasks Completed
 
 - Created dim_date covering all dates for analysis
 - Added date_id foreign key to fact_sales
@@ -56,13 +56,13 @@ Executed quality checks:
 - Validated joins between fact table and date dimension
 - Ensured all fact records map to valid dates
 
-🗂️ Date Dimension Includes
+Date Dimension Includes
 - year, quarter, month, month_name
 - week_of_year
 - day, day_name
 - weekend flag
 
-🎯 Purpose of Date Dimension
+Purpose of Date Dimension
 
 - Simplifies time-series analysis
 - Helps create dashboards based on daily/weekly/monthly metrics
@@ -80,7 +80,7 @@ Your star schema now has:
 Ready for deeper analytics & BI dashboards.
 
 ## Day 5 — Transform Layer + Analytical Views
-✔️ Tasks Completed
+Tasks Completed
 
 - Added cost_price to product dimension
 - Rebuilt fact table with enhanced metric
@@ -96,7 +96,7 @@ Ready for deeper analytics & BI dashboards.
 - Profit by Product
 - Daily Sales Trend
 
-🎯 Outcome
+Outcome
 
 The project now supports:
 - End-to-end analytics
@@ -110,20 +110,22 @@ The data warehouse now contains:
 - REPORTS → business dashboards
 
 ## Day 6 — Automated ETL Pipeline (Streams + Tasks)
-✔ Tasks Completed
+Tasks Completed
 
 - Created Snowflake Stream on the raw table to track new data
 - Built an automated ETL ingestion using Stored Procedure
 - Scheduled a Task to refresh fact table automatically
 - Successfully tested automatic loading
 
-🔄 Pipeline Flow
+Pipeline Flow
 
 - New data lands in RAW.sales_raw
 - Stream captures changes
 - Stored procedure transforms & loads only new rows into fact_sales_enriched
 - Task runs every 5 minutes and keeps warehouse fresh
 
-🎯 Result
+Result
 
 - Project is now a fully automated incremental ETL pipeline, similar to real industry systems.
+
+## Day 7 - Analytics Layer + BI Dashboard Plan
