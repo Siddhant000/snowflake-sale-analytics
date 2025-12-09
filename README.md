@@ -129,3 +129,15 @@ Result
 - Project is now a fully automated incremental ETL pipeline, similar to real industry systems.
 
 ## Day 7 - Analytics Layer + BI Dashboard Plan
+
+we built the Analytics Layer on top of the enriched fact table.
+This layer is optimized for dashboards, reporting, and faster query performance.
+
+It includes:
+
+- Materialized Views
+- Summary/Aggregated Tables
+- Product & Customer performance models
+- Monthly sales insights
+
+This is the layer that BI Tools (Power BI, Looker, Tableau) will directly connect to.
