@@ -108,3 +108,22 @@ The data warehouse now contains:
 - RAW → staging
 - TRANSFORMED → dimensions + facts
 - REPORTS → business dashboards
+
+## Day 6 — Automated ETL Pipeline (Streams + Tasks)
+✔ Tasks Completed
+
+- Created Snowflake Stream on the raw table to track new data
+- Built an automated ETL ingestion using Stored Procedure
+- Scheduled a Task to refresh fact table automatically
+- Successfully tested automatic loading
+
+🔄 Pipeline Flow
+
+- New data lands in RAW.sales_raw
+- Stream captures changes
+- Stored procedure transforms & loads only new rows into fact_sales_enriched
+- Task runs every 5 minutes and keeps warehouse fresh
+
+🎯 Result
+
+- Project is now a fully automated incremental ETL pipeline, similar to real industry systems.
