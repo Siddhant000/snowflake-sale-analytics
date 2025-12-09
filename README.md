@@ -78,3 +78,33 @@ Your star schema now has:
 - fact_sales
 
 Ready for deeper analytics & BI dashboards.
+
+## Day 5 — Transform Layer + Analytical Views
+✔️ Tasks Completed
+
+- Added cost_price to product dimension
+- Rebuilt fact table with enhanced metric
+- Added new KPIs:
+- gross amount
+- discount amount
+- net amount
+- margin per unit
+- total profit
+- Created REPORTS schema
+- Added analytical BI views:
+- Monthly Revenue
+- Profit by Product
+- Daily Sales Trend
+
+🎯 Outcome
+
+The project now supports:
+- End-to-end analytics
+- Profitability insights
+- Discount logic
+- Ready-to-use BI dashboards
+
+The data warehouse now contains:
+- RAW → staging
+- TRANSFORMED → dimensions + facts
+- REPORTS → business dashboards
